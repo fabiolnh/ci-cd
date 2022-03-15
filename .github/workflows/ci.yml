@@ -6,6 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-go@v2
+        working-directory: ./app
         with:
           go-version: 1.15
       - run: go test
