@@ -1,2 +1,2 @@
 # Continuous Integration
-A Simples Go App with Continuous Integration (Git Actions)
+A Simple Go App with Continuous Integration (Git Actions)
