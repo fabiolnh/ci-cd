@@ -1,3 +1,5 @@
+package test
+
 import "testing"
 
 func Test_Soma(t *testing.T) {
