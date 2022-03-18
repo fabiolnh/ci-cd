@@ -1,4 +1,4 @@
-name: ci-golang-workflow
+name: ci-workflow
 on: 
   pull_request:
     branches:
@@ -13,7 +13,7 @@ jobs:
         with:
           go-version: 1.15
       
-      - run: go test
+      - run: go test -coverprofile=coverage.out
         working-directory: ./app
       
       - run: go run math.go
@@ -28,13 +28,12 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1 
         with:
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.TOKEN }}
+          username: ${{ secrets.DOCKER_HUB_USERNAME }}
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
       - name: Build and push
-        working-directory: ./app
         id: docker_build
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: fabiolnh/fc2.0-ci-go:latest
+          tags: fabiolnh/ci:latest
