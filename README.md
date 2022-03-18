@@ -1,2 +1,2 @@
 # Continuous Integration
-A Simple Go App with Continuous Integration (Git Actions)
+A Simple Go App with Continuous Integration (Git Actions: Test Coverage + SonarQube + Build + Docker Push)
