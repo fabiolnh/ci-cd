@@ -8,3 +8,4 @@ A Simple Go App with CI and CD:
 - Docker Push
 - Automatic tagging and releases (with conventional commits)
 - Rollback Workflow
+- Horusec
