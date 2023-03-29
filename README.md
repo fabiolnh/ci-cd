@@ -1,4 +1,4 @@
-# Continuous Integration
+# Continuous Integration and Continuous Delivery
 
 A Simple Go App with CI and CD:
 
@@ -7,3 +7,4 @@ A Simple Go App with CI and CD:
 - Build
 - Docker Push
 - Automatic tagging and releases (with conventional commits)
+- Rollback Workflow
