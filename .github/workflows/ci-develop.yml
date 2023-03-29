@@ -1,4 +1,4 @@
-name: ci-workflow
+name: CI - Develop
 on: 
   pull_request:
     branches:
