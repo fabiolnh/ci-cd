@@ -1,0 +1,21 @@
+{
+    "convention": {
+        "commitTypes": [
+            "feat",
+            "fix",
+            "perf",
+            "refactor",
+            "style",
+            "test",
+            "build",
+            "docs",
+            "merge",
+            "chore",
+            "ci",
+            "revert"
+        ],
+        "commitScopes": [],
+        "releaseTagGlobPattern": "v[0-9]*.[0-9]*.[0-9]*",
+        "issueRegexPattern": "(^|\\s)#\\d+(\\s|$)"
+    }
+}
