@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang:1.22.5
 RUN mkdir -p /app
 USER nonroot
 WORKDIR /app
